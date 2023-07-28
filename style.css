@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+nav {
+    background-color: darkgreen;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* Quote List Styles */
+#quote-list {
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+}
+
+.quote {
+    border: 1px solid #ccc;
+    background-color: rgb(101, 206, 206);
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    height:15vh;
+    width: 85vh;
+    position: relative;
+    left: 60vh;
+    border-radius: 5px;
+    
+}
+.view-full{
+    position: relative;
+    left: 50vh;
+    bottom: 10vh;
+    font-size: 18px;
+}
+
+/* Quote Form Styles */
+#quote-form {
+    max-width: 400px;
+    margin: 0 auto;
+    /* display: flex; */
+    
+    /* height: 40vh;
+    width: 80vh;
+    background-color: green; */
+}
+.flex{
+    position: relative;
+    left: 80vh;
+    display: flex;
+    background-color:rgb(59, 158, 59);
+    height: 40vh;
+    width: 50vh;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    
+
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: rgb(6, 72, 6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav h2 {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .quote {
+        font-size: 14px;
+    }
+
+    #quote-form {
+        max-width: 100%;
+    }
+}
+
+/* Hide background when quote form is displayed */
+.hide-background {
+    background-color: transparent;
+}
+/* ... Same as before ... */
+
+.quote-text {
+    font-size: 24px;
+  }
+  
+  .quote-author {
+    font-size: 18px;
+  }
+  
+/* ... Existing code ... */
+
+.quote-form-hidden {
+    display: none;
+  }
